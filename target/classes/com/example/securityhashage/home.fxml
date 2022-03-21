@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.securityhashage.HelloController">
+   <children>
+      <TextArea fx:id="message" layoutX="33.0" layoutY="63.0" prefHeight="75.0" prefWidth="538.0" />
+      <TextField fx:id="hashCode" layoutX="33.0" layoutY="174.0" prefHeight="26.0" prefWidth="538.0" />
+      <Label layoutX="33.0" layoutY="150.0" prefHeight="18.0" prefWidth="77.0" text="Le Hash" />
+      <Label layoutX="33.0" layoutY="37.0" prefHeight="18.0" prefWidth="77.0" text="Le Message" />
+      <Button fx:id="genererBtn" layoutX="33.0" layoutY="217.0" mnemonicParsing="false" onAction="#md5Hashing" prefHeight="26.0" prefWidth="97.0" text="Generer" />
+      <ComboBox fx:id="algoChoise" layoutX="474.0" layoutY="24.0" prefHeight="26.0" prefWidth="97.0" />
+   </children>
+</AnchorPane>
