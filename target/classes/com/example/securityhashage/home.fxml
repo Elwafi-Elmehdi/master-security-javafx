@@ -8,8 +8,14 @@
       <TextArea fx:id="message" layoutX="33.0" layoutY="63.0" prefHeight="75.0" prefWidth="538.0" />
       <TextField fx:id="hashCode" layoutX="33.0" layoutY="174.0" prefHeight="26.0" prefWidth="538.0" />
       <Label layoutX="33.0" layoutY="150.0" prefHeight="18.0" prefWidth="77.0" text="Le Hash" />
-      <Label layoutX="33.0" layoutY="37.0" prefHeight="18.0" prefWidth="77.0" text="Le Message" />
+      <Label fx:id="" layoutX="33.0" layoutY="37.0" prefHeight="18.0" prefWidth="77.0" text="Le Message" />
       <Button fx:id="genererBtn" layoutX="33.0" layoutY="217.0" mnemonicParsing="false" onAction="#md5Hashing" prefHeight="26.0" prefWidth="97.0" text="Generer" />
       <ComboBox fx:id="algoChoise" layoutX="474.0" layoutY="24.0" prefHeight="26.0" prefWidth="97.0" />
+      <Button fx:id="copy" layoutX="33.0" layoutY="346.0" mnemonicParsing="false" onAction="#copyText" text="Copier" />
+      <Button fx:id="generateHash2" layoutX="103.0" layoutY="346.0" mnemonicParsing="false" onAction="#md5Hashing" text="Generer" />
+      <Button layoutX="188.0" layoutY="346.0" mnemonicParsing="false" text="Verifier" onAction="#verify" />
+      <TextField fx:id="msgCopier" layoutX="33.0" layoutY="262.0" prefHeight="26.0" prefWidth="538.0" />
+      <Label fx:id="resultat" layoutX="289.0" layoutY="350.0" prefHeight="18.0" prefWidth="191.0" />
+      <TextField fx:id="hash2" layoutX="33.0" layoutY="298.0" prefHeight="26.0" prefWidth="538.0" />
    </children>
 </AnchorPane>
