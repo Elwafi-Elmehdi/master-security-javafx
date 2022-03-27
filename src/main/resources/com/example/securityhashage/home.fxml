@@ -12,10 +12,10 @@
       <Button fx:id="genererBtn" layoutX="33.0" layoutY="217.0" mnemonicParsing="false" onAction="#md5Hashing" prefHeight="26.0" prefWidth="97.0" text="Generer" />
       <ComboBox fx:id="algoChoise" layoutX="474.0" layoutY="24.0" prefHeight="26.0" prefWidth="97.0" />
       <Button fx:id="copy" layoutX="33.0" layoutY="346.0" mnemonicParsing="false" onAction="#copyText" text="Copier" />
-      <Button fx:id="generateHash2" layoutX="103.0" layoutY="346.0" mnemonicParsing="false" onAction="#md5Hashing" text="Generer" />
-      <Button layoutX="188.0" layoutY="346.0" mnemonicParsing="false" text="Verifier" onAction="#verify" />
+      <Button fx:id="generateHash2" layoutX="118.0" layoutY="346.0" mnemonicParsing="false" onAction="#md5Hashing" text="Generer" />
+      <Button fx:id="verifyBtn" layoutX="211.0" layoutY="346.0" mnemonicParsing="false" onAction="#verify" text="Verifier" />
       <TextField fx:id="msgCopier" layoutX="33.0" layoutY="262.0" prefHeight="26.0" prefWidth="538.0" />
-      <Label fx:id="resultat" layoutX="289.0" layoutY="350.0" prefHeight="18.0" prefWidth="191.0" />
+      <Label fx:id="resultat" layoutX="322.0" layoutY="350.0" prefHeight="18.0" prefWidth="191.0" />
       <TextField fx:id="hash2" layoutX="33.0" layoutY="298.0" prefHeight="26.0" prefWidth="538.0" />
    </children>
 </AnchorPane>

@@ -30,6 +30,12 @@ public class HelloController implements Initializable {
     private TextField hash2;
     @FXML
     private Label resultat;
+    @FXML
+    private Button verifyBtn;
+    @FXML
+    private Button generateHash2;
+    @FXML
+    private Button copy;
 
 
     @FXML
@@ -56,11 +62,11 @@ public class HelloController implements Initializable {
     @FXML
     public void verify(ActionEvent actionEvent) {
         if (hashCode.getText().equalsIgnoreCase(hash2.getText())){
-            resultat.setTextFill(Color.GREEN);
+            resultat.getStyleClass().setAll("lbl","lbl-success");
             resultat.setText("LE MESSAGE EST INTEGRE");
         }else
         {
-            resultat.setTextFill(Color.RED);
+            resultat.getStyleClass().setAll("lbl","lbl-danger");
             resultat.setText("LE MESSAGE EST NON INTEGRE");
         }
     }
@@ -70,6 +76,17 @@ public class HelloController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         algoChoise.getItems().setAll(AlgoType.values());
         algoChoise.setValue(AlgoType.MD5);
+
+        copy.getStyleClass().setAll("btn","btn-default");
+        genererBtn.getStyleClass().setAll("btn","btn-primary");
+        generateHash2.getStyleClass().setAll("btn","btn-primary");
+        verifyBtn.getStyleClass().setAll("btn","btn-success");
+
+
+        algoChoise.getStyleClass().setAll("split-menu-btn","split-menu-btn-primary");
+
+
+
     }
 
 
